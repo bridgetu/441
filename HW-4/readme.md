@@ -4,6 +4,6 @@ Wow. This week's excercises were truly a test of my patience and ability to prob
 
 However, I did start to feel like I was grasping a stronger mental hold on the different functions and their abilities... but definitely still working on grasping exactly how to apply them! 
 
-Problem #5 was extremely tricky and plenty of research and trial-and-error to solve. I struggled with applying the arrow function. 
+Problem #5 was extremely tricky, demanding plenty of research and trial-and-error to solve. I struggled with applying the arrow function. 
 
 
