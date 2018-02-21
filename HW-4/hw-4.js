@@ -31,7 +31,13 @@ the correct output occurs.
 //
 // Your code goes here
 
+function squarePrintFuncDef(number) {
+    console.log("The result is: " + (number * number));
+}
 
+let squarePrintFuncExpress = function(number) {
+    console.log("The result is: " + (number * number));
+}
 
 // Function Calls - DO NOT ALTER
 squarePrintFuncDef( 2 );
@@ -49,7 +55,13 @@ squarePrintFuncExpress( 2 );
 
 // Your code here.
 
-
+function min(num1, num2) {
+    if (num1 < num2) {
+        return num1;
+    } else {
+        return num2;
+    }
+} 
 
 
 // Function Calls - DO NOT ALTER
@@ -72,7 +84,17 @@ console.log( min(0, -10) );
 
 // Your code here.
 
+function countChar(text, character) {
+    var charCount = 0; 
 
+    text.split('').map(function(t, i) {
+        if (t == character) {
+            charCount++;
+        }
+    });
+
+    return charCount;
+}
 
 // Function Calls - DO NOT ALTER
 console.log( countChar("BBC", "B") );
@@ -96,7 +118,31 @@ console.log( countChar("michael", "M") );
 
 // Your code here.
 
+function range(start, end, step = 1) {
+    var allNumArray = [];
 
+    if (start > end) {
+        for (var i = start; i >= end; i += step) {
+            allNumArray.push(i);
+        }
+    } else {
+        for (var i = start; i <= end; i += step) {
+            allNumArray.push(i);
+        }
+    }
+
+    return allNumArray;
+}
+
+function sum(array) {   
+    var arraySum = 0;
+
+    array.map(function(num) {
+        arraySum += num;
+    });
+
+    return arraySum;
+}
 
 
 // Function Calls - DO NOT ALTER
@@ -121,6 +167,13 @@ console.log( sum(range(1, 10)) );
 
 // Your code here.
 
+function loop(value, test_func, update_func, body_func) {
+    if (test_func(value)) {
+        body_func(value);
+        var newValue = update_func(value);
+        loop(newValue, test_func, update_func, body_func);
+    }
+}
 
 // Function Calls - DO NOT ALTER
 loop(3, n => n > 0, n => n - 1, console.log);
