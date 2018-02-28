@@ -1,6 +1,6 @@
 # HW-5 Readme for BRIDGET UNTERREINER
 
-This week was extremely challengng for me. I ran into many road blocks with the homework exercies, forcing me to slow down and delve into outside research to find the proper solutions. 
+This week was extremely challenging for me. I ran into many road blocks with the homework exercies, forcing me to slow down and delve into outside research to find the proper solutions. 
 
 Right off the bat I was experiencing trouble with successfully running my problem #1 code in the browser. However, I used this assignment as an opportunity to download the "Node.js" sofware, which allows me to run code directly in Visual Studio Code... and my solution finally ran successfully. Downloading this software made my process more streamlined and efficient because I was no longer bothered by having to open my browser everytime I wanted to test my code. 
 
