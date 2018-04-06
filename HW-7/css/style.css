@@ -1,0 +1,37 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato";
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body > div {
+    flex: 1;
+    padding: 20px;
+}
+
+.german-black {
+    background-color: black;
+    height: 100%;
+    color: white;
+}
+
+.german-black h1 {
+    margin-top: 0;
+}
+
+.german-red {
+    background-color: rgb(227, 0, 19);
+}
+
+.german-yellow {
+    background-color: rgb(255, 206, 70);
+}
+
