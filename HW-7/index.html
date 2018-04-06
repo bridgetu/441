@@ -9,32 +9,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="german-black flag-section">
-        <div class="story-text">
+    <div class="german-black">
+        
             <p>You and your friend, Olivia, are traveling to Berlin. You have made arrangements to stay with her close childhood friend, Stella, who has recently moved to Berlin from Columbus, Ohio to teach English there for the year.</p>
             <p>Stella has agreed to meet you and Olivia and the airport upon your arrival.</p>
             <p>The two of you are ecstatic to see Stella and looking forward to partying it up in Berlin… but are also broke college students who are traveling on a budget...</p>
             <p>She tells us that we’ll be taking a bus to the U-bahn (the city’s underground train), and then riding that the rest of the way until we reach her apartment. She encourages us to buy a public transportation pass before we board the bus, but also tells us that there is a chance that we will never be asked to show it, so it’s up to us if we want to spend the money on one or not. However, on the off-chance we are asked to show it, and we decided not to buy one, we will be forced to pay a hefty fine.</p>
             <p>So… do you spend the money upfront and buy the pass? Or… do you save the money and hope you don’t get caught?</p>
-        </div>
-        <div class="action-buttons">
-            <button class="action-1">This is the first thing you can do</button>
-            <button class="action-2">This is the second thing you can do</button>
-        </div>
-    </div>
-    <div class="german-red flag-section">
-        <p>You shell out the 50 euros for the ticket, happy that you won’t have the worry of getting caught and knowing that buying the pass is cheaper than paying the fee. You know you’ll feel better because you’re doing the “right” thing.</p>
-        <p>
-            A ticket-taker approaches you on the U-bahn, so you reach for your wallet, feeling justified in your decision to buy the ticket, only to realize that your pass is not in the special pocket on the exterior of your bag where you meant to place it earlier. You start to panic… did you drop it when you were meaning to place it back in your bag… did someone steal it out of your bag after they saw you place it in the pocket? Regardless, you are without a ticket and the ticket-taker is about to ask you for your ticket.
-        </p>
-        <div class="action-buttons">
-            <button class="action-1">This is the first thing you can do</button>
-            <button class="action-2">This is the second thing you can do</button>
-        </div>
-    </div>
-    <div class="german-yellow flag-section">
-        <p>You run away.</p>
-        <p>You end up falling down the stairs at the train station, break your ankle, are taken to the hospital, and spend the rest of the trip sitting on the couch while our friends are hitting the town without you.</p>
+        
+            <button class="action-1" onclick="revealStory(1, 1)">You buy the ticket.</button>
+            <button class="action-2" onclick="revealStory(1, 2)">You take a chance and don't buy the ticket.</button>
+        
     </div>
     <script src="js/index.js"></script>
 </body>
