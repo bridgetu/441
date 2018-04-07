@@ -2,7 +2,7 @@
 var point_in_story = 1;
 var body = document.getElementsByTagName('body')[0];
 
-// each outcome
+// An array of objects that contain the rest of the story
 var outcomes = [
     {
         option: 1,
@@ -52,7 +52,7 @@ var outcomes = [
 // Function to select which piece of content to reveal for the story
 // Arguments:
 //   section: which part of the layout is targeted? (e.g. 1 will reveal red flag, 2 will reveal yellow flag)
-//   option: array item which path did you pick?
+//   option: array index for the path picked
 function revealStory(section, option) {
 
     var flag_color;
@@ -77,18 +77,26 @@ function revealStory(section, option) {
     point_in_story += 1;
 }
 
+// Create the paragraphs and buttons from the outcomes.
+// Arguments:
+//  story: the story section DOM element
+//  outcome: one of the outcome array items
+
 function makeParagraphs(story, outcome) {
     var paragraphs = [];
 
+    // Generate paragraph from text array
     outcome.text.map(function(text_item) {
         var newParagraph = document.createElement('p');
         newParagraph.textContent = text_item;
         story.appendChild(newParagraph);
     });
 
+    // Create button group for action buttons
     var buttonGroup = document.createElement('div');
     buttonGroup.classList.add('button-group');
 
+    // Create the buttons and their action functions, and append them to the DOM
     outcome.buttons.map(function(button_item) {
         var newButton = document.createElement('button');
         newButton.textContent = button_item.option;
