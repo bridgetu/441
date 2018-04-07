@@ -35,11 +35,15 @@ var outcomes = [
         buttons: [
             {
                 option: 'You turn in the ticket.',
-                outcome: 'When you arrive at the counter there is a handsome young man in a panic because he has dropped his pass… which is most likely the pass you found on the ground. When you present him with the pass he is so appreciative that he insists on exchanging information and buying you a drink while you’re in Berlin. How perfect.'
+                outcome: [
+                    'When you arrive at the counter there is a handsome young man in a panic because he has dropped his pass… which is most likely the pass you found on the ground. When you present him with the pass he is so appreciative that he insists on exchanging information and buying you a drink while you’re in Berlin. How perfect.'
+                ]
             },
             {
                 option: 'You keep the found ticket.',
-                outcome: 'You go on your way and spend your money living it up in Berlin.'
+                outcome: [
+                    'You go on your way and spend your money living it up in Berlin.'
+                ]
             }
         ]
     },
@@ -82,17 +86,23 @@ function makeParagraphs(story, outcome) {
         story.appendChild(newParagraph);
     });
 
+    var buttonGroup = document.createElement('div');
+    buttonGroup.classList.add('button-group');
+
     outcome.buttons.map(function(button_item) {
         var newButton = document.createElement('button');
         newButton.textContent = button_item.option;
         newButton.onclick = function() {
             var lastSection = document.createElement('div');
             lastSection.classList.add('german-yellow');
+            button_item.outcome.map(function(outcome_item) {
+                var newParagraph = document.createElement('p');
+                newParagraph.textContent = outcome_item;
+                lastSection.appendChild(newParagraph);
+            });
+            body.appendChild(lastSection);
         }
-        story.appendChild(newButton);
+        buttonGroup.appendChild(newButton);
     });
+    story.appendChild(buttonGroup);
 };
-
-function makeParagraphsOnly() {
-    // Need a way to compile paragraphs without putting it in mega-huge function
-}

@@ -35,3 +35,6 @@ body > div {
     background-color: rgb(255, 206, 70);
 }
 
+.button-group {
+    text-align: center;
+}
