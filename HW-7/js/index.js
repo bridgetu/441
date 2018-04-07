@@ -1,5 +1,6 @@
 // Where are we in the story? Intro (0), middle (1), end (2). Start at the beginning
-var point_in_story = 0;
+var point_in_story = 1;
+var body = document.getElementsByTagName('body')[0];
 
 // each outcome
 var outcomes = [
@@ -47,7 +48,7 @@ var outcomes = [
 // Function to select which piece of content to reveal for the story
 // Arguments:
 //   section: which part of the layout is targeted? (e.g. 1 will reveal red flag, 2 will reveal yellow flag)
-//   option: which path did you pick?
+//   option: array item which path did you pick?
 function revealStory(section, option) {
 
     var flag_color;
@@ -60,21 +61,38 @@ function revealStory(section, option) {
             flag_color = 'german-yellow';
             break;
         default:
-            flag_color = '';
+            flag_color = 'german-black';
     }
-
-    generateStorySection(option);
-
-    var body = document.getElementsByTagName('body')[0];
 
     var story = document.createElement('div');
     story.classList.add(flag_color);
-    story.innerText = 'cool beans';
+
+    console.log(outcomes[option]);
+    makeParagraphs(story, outcomes[option - 1]);
     body.appendChild(story);
     point_in_story += 1;
 }
 
-// Function to take arrays and create either paragraphs or buttons, depending on context
-function generateStorySection(option) {
-    
+function makeParagraphs(story, outcome) {
+    var paragraphs = [];
+
+    outcome.text.map(function(text_item) {
+        var newParagraph = document.createElement('p');
+        newParagraph.textContent = text_item;
+        story.appendChild(newParagraph);
+    });
+
+    outcome.buttons.map(function(button_item) {
+        var newButton = document.createElement('button');
+        newButton.textContent = button_item.option;
+        newButton.onclick = function() {
+            var lastSection = document.createElement('div');
+            lastSection.classList.add('german-yellow');
+        }
+        story.appendChild(newButton);
+    });
+};
+
+function makeParagraphsOnly() {
+    // Need a way to compile paragraphs without putting it in mega-huge function
 }
