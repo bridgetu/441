@@ -1,0 +1,25 @@
+body {
+    font-family: 'Sedgwick Ave Display';
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    width: 100%;
+}
+
+#page-title {
+    font-size: 5em;
+    color: red;
+}
+
+#page-title, #form-inputs, #submit-artist-song {
+    text-align: center;
+}
+
+#lyrics-output {
+    margin: 15px 0 0 0;
+    font-size: 2em;
+    font-family: 'Nanum Pen Script';
+}
