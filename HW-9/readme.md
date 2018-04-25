@@ -1,4 +1,4 @@
-#HW-9 README for Bridget Unterreiner
+# HW-9 README for Bridget Unterreiner
 
 This week was super fun!! I cherised the freedom that this assignment allowed and was excited with the opportunity to create a site that addressed personal needs/interests. 
 
