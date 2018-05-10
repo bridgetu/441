@@ -1,8 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Archivo+Black:regular);
 @import url(https://fonts.googleapis.com/css?family=Lato:regular);
+@import url(https://fonts.googleapis.com/css?family=Faster+One:regular);
 
 body {
     font-family: 'Archivo Black', sans-serif;
+    text-align: center;
 }
 
 p {
@@ -15,13 +17,15 @@ p {
     margin-right: auto;
 }
 
-#page-title, #nav-links, .section-heading, .contact-info {
+#page-title, #nav-links, .section-heading, .contact-info,  {
     text-align: center;
 }
 
 #page-title {
-    font-size: 3em;
-    font-family: 'Lato', sans-serif;
+    font-size: 2.75em;
+    font-family: 'Faster One';
+    letter-spacing: .1em;
+    color: blue;
 }
 
 #nav-links {
@@ -33,7 +37,8 @@ p {
 }
 
 #hero img {
-    max-width: 100%;
+    max-width: 90%;
+    max-height: 50%;
 }
 
 .grid-item {
