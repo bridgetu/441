@@ -4,6 +4,6 @@ Woahhhhhhhh what a semester! I learned an incredible amount... including the fac
 
 This final assignment was a really sweet way to end a brain-melting semester. I was excited with the opportunity to create a "portfolio" site. With job hunting on the horizon, I've been wanting to put together a basic site to showcase some of my work. This assignment provided me with the perfect opportunity to do so while also providing me with the chance to put my learned skills to practical use.
 
-The idea that I can create a site that I find both functional and visually appealing on my own is both exciting and comforting. 
+The idea that I can create a site that I find both functional and visually appealing on my own is extremely exciting.  
 
 Happy Summer!
