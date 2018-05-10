@@ -1,3 +1,3 @@
 # HW-10:FINAL README for Bridget Unterreiner
 
-![Home Page Mockup](images/outline/outline_1.jpg)
+Click [here](./images/outline-1.jpg) for a `preliminary outline of my home page` !!!
